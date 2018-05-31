@@ -1,0 +1,14 @@
+* root {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("images/background.png") no-repeat center fixed;
+    background-size: cover;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    opacity: 0.3;
+    margin-top: 30px;
+}
