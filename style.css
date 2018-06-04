@@ -1,14 +1,108 @@
-* root {
+* :root {
     margin: 0;
     padding: 0;
+}
+*:focus {
+    outline-style: none;
 }
 body {
     background: url("images/background.png") no-repeat center fixed;
     background-size: cover;
 }
-.logo {
+.header__logo {
     display: flex;
     justify-content: center;
     opacity: 0.3;
     margin-top: 30px;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 420px;
+}
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 0 8px rgba(0,0,0,0.3);
+}
+.form__element {
+    width: 95%;
+    background-color: #f8f8f8;
+    border: 2px solid #c6c6c6;
+    margin-bottom: 20px;
+    height: 39px;
+    display: flex;
+}
+.form__element:hover {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.form__element:hover > .form__separator {
+    background-color: dodgerblue;
+}
+.form__icon {
+    color: #dedede;
+    text-align: center;
+    flex: 1 1 17%;
+    padding-top: 2%;
+    font-size: 1.5rem;
+}
+.form__input {
+    border: 0;
+    flex: 1 1 80%;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    color: #afafaf;
+    padding-left: 5%;
+}
+.form__separator {
+    width: 2px;
+    background-color: #dedede;
+    border-top: 3px solid #f8f8f8;
+    border-bottom: 3px solid #f8f8f8;
+}
+select {
+    cursor: pointer;
+}
+.form__element--check {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+.form__agreement {
+    font-size: 17px;
+    color: #afafaf;
+}
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+.form__button {
+    width: 95%;
+    background: linear-gradient(#a3d840, #73b618);
+    color: #f4f4f4;
+    border: 2px solid #73b618;
+    height: 39px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form__button:hover {
+    border: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
 }

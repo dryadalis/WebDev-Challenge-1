@@ -6,12 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Challenge1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-<div class="logo">
+<header class="header__logo">
     <img src="images/logo.png">
-</div>
-
+</header>
+<section class="main-container">
+    <!-- REGISTER FORM -->
+    <div class="form">
+        <h1>Register Form</h1>
+            <form class="form__container">
+                <div class="form__element">
+                    <div class="form__icon"><i class="fas fa-user" aria-hidden="true"></i></div>
+                    <div class="form__separator"></div>
+                    <input class="form__input" type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="form__element">
+                    <div class="form__icon"><i class="fas fa-lock" aria-hidden="true"></i></div>
+                    <div class="form__separator"></div>
+                    <input class="form__input" type="password" name="passowrd" placeholder="Password" required>
+                </div>
+                <div class="form__element">
+                    <div class="form__icon"><i class="fas fa-lock" aria-hidden="true"></i></div>
+                    <div class="form__separator"></div>
+                    <input class="form__input" type="password" name="confirmPassowrd" placeholder="Confirm password" required>
+                </div>
+                <div class="form__element">
+                    <div class="form__icon"><i class="fas fa-envelope"aria-hidden="true"></i></div>
+                    <div class="form__separator"></div>
+                    <input class="form__input" type="email" name="confirmPassowrd" placeholder="Email" required>
+                </div>
+                <div class="form__element">
+                    <div class="form__icon"><i class="fas fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="form__separator"></div>
+                    <select class="form__input" name="loaction" required>
+                        <option value="" disabled selected>Your Location</option>
+                        <option value="opole">Opole</option>
+                        <option value="krakow">Kraków</option>
+                        <option value="warszawa">Warszawa</option>
+                        <option value="wroclaw">Wrocław</option>
+                        <option value="katowice">Katowice</option>
+                    </select>
+                </div>
+                <div class="form__element--check">
+                    <input type="checkbox" class="form__checkbox" required>
+                    <label class="form__agreement">I have read and accept the terms of use.
+                    </label>
+                </div>
+                <button class="form__button" type="submit">Sign up!</button>
+            </form>
+    </div>
+</section>
 
 </body>
 </html>
