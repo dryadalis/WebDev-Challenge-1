@@ -80,8 +80,49 @@
                 </label>
             </div>
             <button class="form__button" type="submit">Send email</button>
-
         </form>
+    </div>
+    <!-- SIGN IN FORM -->
+    <div class="form">
+        <h1>Sign in!</h1>
+        <form class="form__container">
+            <div class="form__element">
+                <div class="form__icon"><i class="fas fa-user" aria-hidden="true"></i></div>
+                <div class="form__separator"></div>
+                <input class="form__input" type="text" name='username' placeholder="Your Name" required>
+            </div>
+            <div class="form__element">
+                <div class="form__icon"><i class="fas fa-lock" aria-hidden="true"></i></div>
+                <div class="form__separator"></div>
+                <input class="form__input" type="password" name="passowrd" placeholder="Password" required>
+            </div>
+            <div class="form__element--check">
+                <input type="checkbox" class="form__checkbox" required>
+                <label class="form__agreement">Remember me
+                </label>
+            </div>
+            <button class="form__button--small" type="submit">Sign in</button>
+        </form>
+        <!-- RECOVER FORM -->
+        <div class="form">
+            <h1>Recover form</h1>
+            <form class="form__container">
+                <div class="form__element">
+                    <div class="form__icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                    <div class="form__separator"></div>
+                    <input class="form__input" type="text" name='email' placeholder="Enter Your email" required>
+                </div>
+                <div class="form__element">
+                    <div class="form__icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                    <div class="form__separator"></div>
+                    <input class="form__input" type="text" name='phone' placeholder="Enter Your Phone number" required>
+                </div>
+                <div class="button__container">
+                <button class="form__button--small" type="submit">Sign in</button>
+                <button class="form__button--small--done" type="submit">Done</button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 
