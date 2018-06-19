@@ -49,14 +49,14 @@ h1 {
 .form__element {
     width: 95%;
     background-color: #f8f8f8;
-    border: 2px solid #c6c6c6;
+    border: 1px solid #c6c6c6;
     margin-bottom: 20px;
     height: 39px;
     display: flex;
 }
 .form__element:hover, .form__textarea:hover {
     border-color: dodgerblue;
-    box-shadow: 0 0 4px 0 dodgerblue;
+    box-shadow: 0 0 1px 0 dodgerblue;
 }
 .form__element:hover > .form__separator {
     background-color: dodgerblue;
@@ -80,7 +80,7 @@ h1 {
     color: #8c8c8c;
 }
 .form__separator {
-    width: 2px;
+    width: 1px;
     background-color: #dedede;
     border-top: 3px solid #f8f8f8;
     border-bottom: 3px solid #f8f8f8;
@@ -91,12 +91,12 @@ select {
 }
 .form__element--check {
     width: 95%;
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
     color: #8c8c8c;
 }
 .form__agreement {
     font-size: 17px;
+    margin-left: 10px;
 }
 input[type=checkbox] {
     transform: scale(1.5);
@@ -118,7 +118,7 @@ input[type=checkbox] {
 .form__textarea {
     width: 92%;
     background-color: #f8f8f8;
-    border: 2px solid #c6c6c6;
+    border: 1px solid #c6c6c6;
     font-family: Sunflower, sans-serif;
     font-size: 17px;
     color: #afafaf;
@@ -168,5 +168,20 @@ input[type=checkbox] {
 }
 .form__button--small--no:hover {
     background:linear-gradient(#ff3333,#e60000);
+}
+@media (max-width: 768px) {
+    .logo {
+        position: center;
+    }
+    header img {
+        width: 95%;
+    }
+    .main-container {
+        flex-wrap: nowrap;
+        max-height: none;
+    }
+    .form {
+        width: 85%;
+    }
 }
 
